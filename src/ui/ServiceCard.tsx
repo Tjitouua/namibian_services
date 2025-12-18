@@ -1,10 +1,19 @@
 import { IoArrowForward } from "react-icons/io5";
-import { FaPlane } from "react-icons/fa6";
 import { FaPlaneDeparture } from "react-icons/fa";
 
-const ServiceCard = () => {
+
+interface ServiceCardProps {
+    icon: React.ReactNode;
+    category: string;
+    title: string;
+    desc: string;
+    processing_days: string;
+}
+
+
+const ServiceCard: React.FC<ServiceCardProps> = ({ icon, category, title, desc, processing_days }) => {
     return (
-        <div className="pb-3 flex flex-col rounded-md w-1/3">           
+        <div className="pb-3 flex flex-col rounded-md w-[32%]">           
             {/* Image Div  */}
             {/* <div className="h-70 rounded-t-xl bg-[url('/images/passportPic.jpg')] bg-cover bg-center w-full"> */}
 
@@ -15,16 +24,16 @@ const ServiceCard = () => {
                 <div className="w-full py-2 flex items-center justify-between">
                     {/* Icon Div  */}
                     <div className="py-3 px-3 bg-gray-300 text-xl text-black flex items-center judtify-center rounded-sm">
-                       {/* <FaPlane /> */}
-                       <FaPlaneDeparture />
+                       {/* <FaPlaneDeparture /> */}
+                       {icon}
                     </div>
                     {/* Category Div  */}
-                    <div className="px-3 py-1 bg-gray-300 flex justify-center items-center rounded-md">Travel Documents</div>
+                    <div className="px-3 py-1 bg-gray-300 flex justify-center items-center rounded-md">{category}</div>
                 </div>
-                <label className="text-xl font-serif font-bold text-black/80">Passport Application</label>
-                <label className="text-md">Apply for a new passport or renew an existing one for international travel.</label>
+                <label className="text-xl font-serif font-bold text-black/80">{title}</label>
+                <label className="text-md">{desc}</label>
                 <div className="w-full py-2 flex justify-between items-center">
-                    <label className="text-[13px]">Processing: 15-20 business days</label>
+                    <label className="text-[13px]">Processing: {processing_days} business days</label>
                     <button className="py-2 rounded-md flex gap-3 items-center justify-center cursor-pointer text-black px-3 hover:bg-blue-700 hover:text-white">Apply <IoArrowForward /></button>
                 </div>
             </div>
