@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Dropdown } from 'primereact/dropdown';
+import ServiceCard from "../ui/ServiceCard";
 
 
 
@@ -27,6 +28,9 @@ const ServicesSection = () => {
 
             <div className="w-full min-h-screen flex text-gray-500 text-sm flex-col gap-3 py-3">
                 <label>Showing 8 services</label>
+                <div className="w-full py-2 flex items-center justify-between">
+                    <ServiceCard />
+                </div>
             </div>
 
 
