@@ -13,7 +13,7 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, category, title, desc, processing_days }) => {
     return (
-        <div className="pb-3 flex flex-col rounded-md w-[32%]">           
+        <div className="pb-3 flex flex-col rounded-md w-full md:w-[46%] lg:w-[32%]">           
             {/* Image Div  */}
             {/* <div className="h-70 rounded-t-xl bg-[url('/images/passportPic.jpg')] bg-cover bg-center w-full"> */}
 

@@ -23,6 +23,7 @@ const Header = () => {
                     <ul className="flex">
                         <Link to="/" className="px-5 py-3 cursor-pointer hover:bg-blue-600">Home</Link>
                         <Link to="/services" className="px-5 py-3 cursor-pointer hover:bg-blue-600">Services</Link>
+                        <Link to="/ministries" className="px-5 py-3 cursor-pointer hover:bg-blue-600">Ministries</Link>
                         <Link to="" className="px-5 py-3 cursor-pointer hover:bg-blue-600">Login</Link>
                     </ul>
                  </nav>

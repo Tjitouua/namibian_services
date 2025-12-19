@@ -1,24 +1,28 @@
 import Header from "../components/Header";
-import ServicesSection from "../components/ServicesSection";
+import MinistrySection from "../components/MinistrySection";
 import SmallHero from "../components/SmallHero";
 import PageUi from "../ui/PageUi";
 
 
 
-const Services = () => {
 
 
+const Ministries = () => {
+
+
+
+    
     const HeroList = [
         {
-            title: "Government Services",
-            desc: "Browse our comprehensive list of e-services. Find what you need and submit your request online.",
+            title: "Government Ministries",
+            desc: "Browse services by ministry. Select a ministry to view all the e-services they offer.",
         },
     ];
 
 
 
-      return (
-         <PageUi>
+     return (
+        <PageUi>
              <Header />
              {HeroList.map((hero, index) => (
              <SmallHero 
@@ -27,9 +31,9 @@ const Services = () => {
                 desc = {hero.desc}
              />
              ))}
-             <ServicesSection />
+             <MinistrySection />
          </PageUi>
-      );
+     );
 }
 
-export default Services;
+export default Ministries;
