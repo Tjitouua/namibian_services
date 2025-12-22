@@ -14,16 +14,16 @@ interface MinistryProps {
 const MinistryCard: React.FC<MinistryProps> = ({ title, services, desc, ministry }) => {
      return (
         <div className="flex items-start gap-2 w-full lg:w-[45%] xl:w-[32%] py-6 px-4 border border-gray-300">
-              {/* Namibian Logo  */}
-              <div className="h-17 w-17 bg-[url('/images/namibiaLogo.png')] bg-cover bg-center">
-
-              </div>
               {/* Info Div  */}
-              <div className="px-3 w-[80%] flex flex-col gap-3">
+              <div className="px-3 w-full flex flex-col gap-3">
                   <div className="w-full flex items-center justify-between">
-                     <label className="text-xl font-serif font-bold text-black/80">{title}</label>
+                     {/* Namibian Logo  */}
+                     <div className="h-17 w-17 bg-[url('/images/namibiaLogo.png')] bg-cover bg-center">
+
+                     </div>
                      <div className="px-3 py-1 bg-gray-300 flex justify-center items-center rounded-md text-black/80">{services} services</div>
                   </div>
+                  <label className="text-xl font-serif font-bold text-black/80">{title}</label>
                   <label>{desc}</label>
                   <label className="text-[11px] text-gray-500">{ministry}</label>
                   {/* Button  */}
