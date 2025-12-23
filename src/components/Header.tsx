@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
       return (
-        <header className="w-full flex px-15 py-2 text-white shadow-md items-center justify-between min-h-16 sticky top-0 z-50">
+        <header className="w-full flex px-15 py-2 text-white shadow-sm shadow-white/20 items-center justify-between min-h-16 sticky top-0 z-50">
             {/* Content Part  */}
              <div className="min-h-15 flex items-end gap-8">
                 {/* Logo Div  */}
