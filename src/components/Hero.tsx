@@ -4,7 +4,7 @@ import Header from "./Header";
 
 const Hero = () => {
      return (
-        <div className="w-full min-h-screen -mt-20 flex flex-col items-center justify-center px-10 bg-[url('/images/heroPic4.jpg')] bg-center bg-cover">
+        <div className="w-full min-h-screen -mt-20 flex flex-col items-center justify-center px-10 bg-[url('/images/heroPic5.jpg')] bg-center bg-cover">
 
             <div className="flex flex-col  text-white gap-9 justify-center items-center text-center">
                 <label className="text-7xl font-bold">Namibia Government</label>
