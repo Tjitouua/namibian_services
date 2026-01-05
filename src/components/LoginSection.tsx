@@ -41,7 +41,12 @@ const LoginSection = () => {
 
 
     return (
-        <div className="min-h-screen py-13 w-full flex justify-center items-center">
+        <div className="w-full min-h-screen flex px-15">
+        <div className="w-[60%] min-h-screen flex flex-col items-center justify-center gap-8">
+           <label className="font-serif font-bold text-7xl">Welcome Back</label>
+           <label className="text-lg">Login to your account to view your dashboard and see the latest</label>
+        </div>
+        <div className="min-h-screen py-13 w-[40%] flex justify-center items-center">
                     
         <div className="px-6 py-15 flex flex-col border border-gray-200 items-center text-gray-800 gap-5 rounded-sm bg-white shadow-lg">
             {/* User icon  */}
@@ -99,6 +104,7 @@ const LoginSection = () => {
                 <label className="text-[12px] text-gray-500">Don't have An Account? <Link to="#" className="text-blue-950 hover:underline">Register Now.</Link></label>
         </div>
 
+    </div>
     </div>
     );
 }
