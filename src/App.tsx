@@ -4,6 +4,7 @@ import Index from './pages/Index'
 import Services from './pages/Services'
 import Ministries from './pages/Ministries'
 import Login from './pages/Login'
+import SignUp from './pages/SignUp'
 
 
         
@@ -18,6 +19,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/ministries" element={<Ministries />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
        </Routes>
      </BrowserRouter>
   )
