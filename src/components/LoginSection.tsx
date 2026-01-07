@@ -46,8 +46,8 @@ const LoginSection = () => {
 
 
     return (
-        <div className="w-full min-h-screen flex px-15">
-        <div className="w-[70%] min-h-screen text-black/80 flex flex-col justify-center gap-17">
+        <div className="w-full min-h-screen flex px-15 gap-5">
+        <div className="w-[70%] hidden min-h-screen text-black/80 md:flex flex-col justify-center gap-17">
            <label className="font-bold text-7xl">Welcome Back</label>
            <label className="text-lg">Sign in to access your Namibia Government E-Services Portal dashboard. From here,
             you can easily apply for services, track your applications, manage your information, and stay informed about
@@ -60,7 +60,7 @@ const LoginSection = () => {
                    <ImWhatsapp className="text-6xl cursor-pointer"/>
              </div>
         </div>
-        <div className="min-h-screen py-13 w-[30%] flex justify-end items-center">
+        <div className="min-h-screen py-13 w-full md:w-[30%] flex justify-center md:justify-end items-center">
                     
         <div className="px-6 py-15 flex flex-col border border-gray-200 items-center text-gray-800 gap-5 rounded-sm bg-white shadow-lg">
             {/* User icon  */}

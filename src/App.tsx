@@ -5,6 +5,7 @@ import Services from './pages/Services'
 import Ministries from './pages/Ministries'
 import Login from './pages/Login'
 import SignUp from './pages/SignUp'
+import MinistryServices from './pages/MinistryServices'
 
 
         
@@ -20,6 +21,7 @@ function App() {
           <Route path="/ministries" element={<Ministries />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/ministry_of_finance" element={<MinistryServices />} />
        </Routes>
      </BrowserRouter>
   )

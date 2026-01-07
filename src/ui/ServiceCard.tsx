@@ -13,7 +13,7 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, category, title, desc, processing_days }) => {
     return (
-        <div className="pb-3 flex flex-col rounded-md w-full md:w-[46%] lg:w-[32%]">           
+        <div className="pb-3 flex flex-col  rounded-md w-full md:w-[46%] lg:w-[32%]">           
             {/* Image Div  */}
             {/* <div className="h-70 rounded-t-xl bg-[url('/images/passportPic.jpg')] bg-cover bg-center w-full"> */}
 
@@ -23,14 +23,14 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, category, title, desc, 
                 {/* Top (Icon & Category) Div  */}
                 <div className="w-full py-2 flex items-center justify-between">
                     {/* Icon Div  */}
-                    <div className="py-3 px-3 bg-gray-300 text-xl text-black flex items-center judtify-center rounded-sm">
+                    <div className="py-3 px-3 bg-gray-300 text-xl text-black/70 flex items-center judtify-center rounded-sm">
                        {/* <FaPlaneDeparture /> */}
                        {icon}
                     </div>
                     {/* Category Div  */}
                     <div className="px-3 py-1 bg-gray-300 flex justify-center items-center rounded-md">{category}</div>
                 </div>
-                <label className="text-xl font-serif font-bold text-black/80">{title}</label>
+                <label className="text-xl font-serif font-bold text-black/70">{title}</label>
                 <label className="text-md">{desc}</label>
                 <div className="w-full py-2 flex justify-between items-center">
                     <label className="text-[13px]">Processing: {processing_days} business days</label>

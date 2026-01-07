@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
       return (
-        <header className="w-full flex px-15 py-2 text-white shadow-sm shadow-white/20 items-center justify-between min-h-16 sticky top-0 z-50">
+        <header className="w-full flex px-15 py-2 text-white bg-blue-500 shadow-sm shadow-white/20 items-center justify-between min-h-16 sticky top-0 z-50">
             {/* Content Part  */}
              <div className="min-h-15 flex items-end gap-8">
                 {/* Logo Div  */}
@@ -21,10 +21,10 @@ const Header = () => {
              <div className="min-h-16 items-center flex font-bold gap-4">
                  <nav className="h-14 items-center flex font-bold gap-4">
                     <ul className="flex">
-                        <Link to="/" className="px-5 py-3 cursor-pointer hover:bg-blue-500">Home</Link>
-                        <Link to="/services" className="px-5 py-3 cursor-pointer hover:bg-blue-500">Services</Link>
-                        <Link to="/ministries" className="px-5 py-3 cursor-pointer hover:bg-blue-500">Ministries</Link>
-                        <Link to="/login" className="px-5 py-3 cursor-pointer hover:bg-blue-500">Login</Link>
+                        <Link to="/" className="px-5 py-3 cursor-pointer hover:bg-blue-600">Home</Link>
+                        <Link to="/services" className="px-5 py-3 cursor-pointer hover:bg-blue-600">Services</Link>
+                        <Link to="/ministries" className="px-5 py-3 cursor-pointer hover:bg-blue-600">Ministries</Link>
+                        <Link to="/login" className="px-5 py-3 cursor-pointer hover:bg-blue-600">Login</Link>
                     </ul>
                  </nav>
              </div>
