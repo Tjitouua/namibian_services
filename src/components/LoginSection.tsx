@@ -40,7 +40,7 @@ const LoginSection = () => {
 
          if (!valid) return;
 
-         navigate('/signup')
+         navigate('/admin_home')
     }
 
 
