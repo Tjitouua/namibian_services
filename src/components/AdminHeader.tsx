@@ -6,7 +6,7 @@ import { IoSettingsSharp } from "react-icons/io5";
 
 const AdminHeader = () => {
        return (
-           <div className="h-screen w-[25%] bg-gray-200 flex flex-col gap-5 py-10 px-3 ">
+           <div className="h-screen w-[25%] sticky z-0 top-0 bg-gray-200 flex flex-col gap-5 py-10 px-3 ">
                {/* Top part Div  */}
                 <div className="min-h-15 flex items-end gap-5 px-2 pb-5 border-b border-black">
                 {/* Logo Div  */}

@@ -1,4 +1,5 @@
 import AdminHeader from "../components/AdminHeader";
+import AdminHomeSection from "../components/AdminHomeSection";
 import SmallHero from "../components/SmallHero";
 import PageUi from "../ui/PageUi";
 
@@ -18,7 +19,7 @@ const AdminHome = () => {
 
 
       return (
-        <div className="w-full flex items-center justify-between min-h-screen">
+        <div className="w-full flex justify-between min-h-screen">
              {/* Header  */}
              <AdminHeader />
              <PageUi className="">
@@ -31,6 +32,9 @@ const AdminHome = () => {
                  descClassName="!text-sm"
                 /> 
                ))}
+
+               <AdminHomeSection />
+
              </PageUi>
         </div>
       )
