@@ -4,6 +4,7 @@ import { FiPhone } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import { LuIdCard } from "react-icons/lu";
 import { RiCalendarEventLine } from "react-icons/ri";
+import { FaRegCheckCircle } from "react-icons/fa";
 
 
 
@@ -20,14 +21,14 @@ const RequestsCard = () => {
                  </div>
                  {/* Buttons Div  */}
                  <div className="flex gap-2">
-                     <div className="py-1 px-3 bg-green-200 border border-green-400 rounded-xl text-[12px]">Completed</div>
+                     <div className="py-1 px-3 bg-green-50 text-green-700 flex items-center justify-center gap-2 border border-green-400 rounded-xl text-[12px]"><FaRegCheckCircle /> Completed</div>
                  </div>
             </div>
 
             <label className="text-sm">Lost my National ID during relocation. Need urgent replacement.</label>
 
             {/* Contact Div */}
-            <div className="w-full py-3 border-b border-gray-300 pb-5 flex items-center justify-between gap-3">
+            <div className="w-full py-3 border-b border-gray-300 pb-5 flex-wrap flex items-center justify-between gap-3">
                 <div className="flex items-center gap-2 text-sm"><FiUser /> Maria Nekongo</div>
                 <div className="flex items-center gap-2 text-sm"><LuIdCard /> 90050200002</div>
                 <div className="flex items-center gap-2 text-sm"><FiPhone /> +264 81 345 6789</div>
@@ -39,6 +40,12 @@ const RequestsCard = () => {
                  <div className="flex items-center gap-4 text-sm"><RiCalendarEventLine /> 1 Dec 2025, 11:15 am</div>
                  <div className="flex items-center gap-4 text-sm"><RiCalendarEventLine /> 28 Dec 2024, 01:30 pm</div>
             </div>
+
+            {/* Notes Div  */}
+            <div className="py-3 px-5 flex mt-3 flex-col gap-1 w-full bg-gray-200">
+                 <label className="text-[11px]">Internal Notes</label>
+                 <label className="text-black/90 text-sm">Verification in progress. Awaiting photo submission.</label>
+            </div> 
 
         </div>
        );
