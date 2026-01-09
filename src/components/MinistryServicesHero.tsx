@@ -8,7 +8,7 @@ import Header from "./Header";
 const MinistryServicesHero = () => {
      return (
      //    <div className="bg-[url('/images/heroPic.jpg')] bg-center bg-cover">
-        <div className="w-full min-h-50 flex flex-col items-center justify-center px-15 bg-gray-200">
+        <div className="w-full min-h-50 flex flex-col items-center justify-center px-15 bg-gray-100">
 
             <div className="flex flex-col w-full text-white h-full gap-2 justify-center pr-2 items-start">
                   {/* <button className="flex gap-4 rounded-lg cursor-pointer items-center justify-center px-5 py-2 hover:bg-blue-700"><IoMdArrowRoundBack /> Back to Ministries</button> */}

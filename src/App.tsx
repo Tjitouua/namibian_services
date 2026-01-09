@@ -7,6 +7,7 @@ import Login from './pages/Login'
 import SignUp from './pages/SignUp'
 import MinistryServices from './pages/MinistryServices'
 import AdminHome from './pages/AdminHome'
+import AdminServices from './pages/AdminServices'
 
 
         
@@ -24,6 +25,7 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/ministry_of_finance" element={<MinistryServices />} />
           <Route path="/admin_home" element={<AdminHome />} />
+          <Route path="/admin_services" element={<AdminServices />} />
        </Routes>
      </BrowserRouter>
   )

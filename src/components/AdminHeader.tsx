@@ -1,13 +1,14 @@
 import { IoHome } from "react-icons/io5";
 import { IoSettingsSharp } from "react-icons/io5";
 import { IoLogOut } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 
 
 
 const AdminHeader = () => {
        return (
-           <div className="h-screen w-[25%] border-r border-gray-300 sticky z-0 top-0 bg-gray-200 flex flex-col gap-5 py-10 px-3 ">
+           <div className="h-screen w-[25%] border-r border-gray-200 sticky z-0 top-0 bg-gray-100 flex flex-col gap-5 py-10 px-3 ">
                {/* Top part Div  */}
                 <div className="min-h-15 flex items-end gap-5 px-2 pb-5 border-b border-black">
                 {/* Logo Div  */}
@@ -26,9 +27,9 @@ const AdminHeader = () => {
                 {/* Navigation Part  */}
                 <div className="flex flex-col">
                     <label className="text-sm text-gray-600 mb-6 ml-2">Navigation</label>
-                    <div className="flex items-center w-full gap-6 py-3 px-2 hover:bg-gray-300 cursor-pointer"><IoHome /> Home</div>
-                    <div className="flex items-center w-full gap-6 py-3 px-2 hover:bg-gray-300 cursor-pointer"><IoSettingsSharp /> Manage Services</div>
-                    <div className="flex items-center w-full gap-6 py-3 px-2 hover:bg-gray-300 cursor-pointer"><IoLogOut /> Logout</div>
+                    <Link to="/admin_home" className="flex items-center w-full gap-6 py-3 px-2 hover:bg-gray-300 cursor-pointer"><IoHome /> Home</Link>
+                    <Link to="/admin_services" className="flex items-center w-full gap-6 py-3 px-2 hover:bg-gray-300 cursor-pointer"><IoSettingsSharp /> Manage Services</Link>
+                    <Link to="" className="flex items-center w-full gap-6 py-3 px-2 hover:bg-gray-300 cursor-pointer"><IoLogOut /> Logout</Link>
                 </div>
 
 
