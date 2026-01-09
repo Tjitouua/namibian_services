@@ -24,7 +24,7 @@ const AdminHome = () => {
              <AdminHeader />
              <PageUi className="">
                {HeroList.map((hero, index) => (
-                 <SmallHero className="!min-h-40" 
+                 <SmallHero className="!min-h-40 !bg-gray-100" 
                  key = {index} 
                  title = {hero.title} 
                  titleClassName="!text-2xl -mb-3"
