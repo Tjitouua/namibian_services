@@ -2,6 +2,7 @@ import type React from "react";
 import StatisticsCard from "../ui/StatisticsCard";
 import { useState } from "react";
 import { Dropdown } from "primereact/dropdown";
+import RequestsCard from "../ui/RequestsCard";
 
 
 
@@ -45,17 +46,17 @@ const AdminHomeSection: React.FC = () => {
         {
             number: 6,
             category: "Pending",
-            bgColor: "bg-orange-100"
+            bgColor: "bg-gray-200"
         }, 
         {
             number: 1,
             category: "In Progress",
-            bgColor: "bg-green-100"
+            bgColor: "bg-blue-100"
         }, 
         {
             number: 5,
             category: "Completed",
-            bgColor: "bg-red-100"
+            bgColor: "bg-gray-200"
         }, 
     ];
 
@@ -73,6 +74,7 @@ const AdminHomeSection: React.FC = () => {
                  />
                 ))}
              </div>
+
              {/* Search part */}
             <div className="w-full flex py-2 gap-4 ">
                 <input className="w-4/5 rounded-md px-5 border border-gray-300" placeholder="Search services ...." type="text" />
@@ -81,6 +83,15 @@ const AdminHomeSection: React.FC = () => {
                 <Dropdown value={selectedCategory} onChange={(e) => setSelectedCategory(e.value)} options={categories} optionLabel="name" 
                 placeholder="All Services" className="w-1/5 md:w-14rem" />
             </div>
+
+            {/* Requests Part */}
+            <div className="w-full py-3 flex flex-col gap-3"> 
+                 <label className="text-sm text-gray-500">Showing 3 of 3 requests</label>
+                 <div className="flex w-full py-1 flex-col gap-2">
+                    <RequestsCard />
+                 </div>
+            </div>
+
         </div>
       );
 }

@@ -1,5 +1,6 @@
 import { IoHome } from "react-icons/io5";
 import { IoSettingsSharp } from "react-icons/io5";
+import { IoLogOut } from "react-icons/io5";
 
 
 
@@ -27,6 +28,7 @@ const AdminHeader = () => {
                     <label className="text-sm text-gray-600 mb-6 ml-2">Navigation</label>
                     <div className="flex items-center w-full gap-6 py-3 px-2 hover:bg-gray-300 cursor-pointer"><IoHome /> Home</div>
                     <div className="flex items-center w-full gap-6 py-3 px-2 hover:bg-gray-300 cursor-pointer"><IoSettingsSharp /> Manage Services</div>
+                    <div className="flex items-center w-full gap-6 py-3 px-2 hover:bg-gray-300 cursor-pointer"><IoLogOut /> Logout</div>
                 </div>
 
 
