@@ -3,6 +3,7 @@ import StatisticsCard from "../ui/StatisticsCard";
 import { useState } from "react";
 import { Dropdown } from "primereact/dropdown";
 import RequestsCard from "../ui/RequestsCard";
+import ServicesCard from "../ui/ServicesCard";
 
 
 
@@ -12,27 +13,17 @@ const AdminServicesSection: React.FC = () => {
 
 
     
-    const [selectedStatus, setSelectedStatus] = useState(null);
-    const status = [
-        { name: 'All Status', code: 'All Status' },
-        { name: 'Pending', code: 'Pending' },
-        { name: 'In Progress', code: 'In Progress' },
-        { name: 'Completed', code: 'Completed' },
+    const [selectedMinistry, setSelectedMinistry] = useState(null);
+    const ministry = [
+        { name: 'All Ministries', code: 'All Ministries' },
+        { name: 'Home Affairs', code: 'Home Affairs' },
+        { name: 'Social Welfare', code: 'Social Welfare' },
+        { name: 'Works & Transport', code: 'Works & Transport' },
+        { name: 'Trade & Industry', code: 'Trade & Industry' },
+        { name: 'Land & Agriculture', code: 'Land & Agriculture' },
+        { name: 'Foreign Affairs', code: 'Foreign Affairs' },
     ]
 
-
-    const [selectedCategory, setSelectedCategory] = useState(null);
-    const categories = [
-        { name: 'All Services', code: 'All Services' },
-        { name: 'Birth Certificate Application', code: 'Birth Certificate Application' },
-        { name: 'National ID Replacement', code: 'National ID Replacement' },
-        { name: 'Passport Application', code: 'Passport Application' },
-        { name: 'Social Welfare Grant', code: 'Social Welfare Grant' },
-        { name: 'Business Registration', code: 'Business Registration' },
-        { name: "Driver's License Renewal", code: "Driver's License Renewal"},
-        { name: 'Marriage Cerficate', code: 'Marriage Cerficate' },
-        { name: 'Land Title Registration', code: 'Land Title Registration' },
-    ];
 
     
 
@@ -68,7 +59,7 @@ const AdminServicesSection: React.FC = () => {
              {/* Search part */}
             <div className="w-full flex py-2 gap-4 ">
                 <input className="w-4/5 rounded-md px-5 border border-gray-300" placeholder="Search services ...." type="text" />
-                <Dropdown value={selectedStatus} onChange={(e) => setSelectedStatus(e.value)} options={status} optionLabel="name" 
+                <Dropdown value={selectedMinistry} onChange={(e) => setSelectedMinistry(e.value)} options={ministry} optionLabel="name" 
                 placeholder="All Ministries" className="w-1/5 md:w-14rem" />
             </div>
 
@@ -76,7 +67,7 @@ const AdminServicesSection: React.FC = () => {
             <div className="w-full py-3 flex flex-col gap-3"> 
                  <label className="text-sm text-gray-500">Showing 3 of 3 services</label>
                  <div className="flex w-full py-1 flex-col gap-2">
-                    <RequestsCard />
+                    <ServicesCard />
                  </div>
             </div>
 
